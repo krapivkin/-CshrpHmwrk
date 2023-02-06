@@ -29,4 +29,4 @@ for (int a = 0; a < massive.Length; a++)
 }
 
 Console.WriteLine($"The number of array elements in the range from 10 to 99 = {count}");
-Console.Readkey();
+Console.ReadKey();

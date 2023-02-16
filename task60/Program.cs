@@ -44,3 +44,4 @@ const int b = 2;
 const int c = 2;
 int[,,] array = GetRandomArray (a, b, c);
 PrintArray(array);
+Console.ReadKey();

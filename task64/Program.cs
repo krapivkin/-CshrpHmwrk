@@ -1,16 +1,15 @@
-﻿// Задача 64: Задайте значение N. Напишите программу, 
-//которая выведет все натуральные числа в промежутке от N до 1.
+﻿/* Задача 64: 
+Задайте значение N. 
+Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
+N = 5 -> "5, 4, 3, 2, 1"
+N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+*/
 
-void PrintNumbers(int n)
-{
+string NumbersRec(int N)         // рекурсией
+{    
+    if (N >= 1) return $"{N} " + NumbersRec(N - 1);    
+    else return String.Empty; 
+} 
 
-Console.Write(n+ " ");
-    if(n==1) return;
-PrintNumbers(n-1);
-}
-int number = 1999;
-PrintNumbers(number);
-Console.WriteLine();
-Console.WriteLine("it's simple (:");
-Console.ReadKey();
+Console.WriteLine(NumbersRec(777)); 
 
